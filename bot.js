@@ -9,8 +9,7 @@ bot.on("ready", () => { // When the bot is ready
 
 const prefix = "e?"
 
-bot.on("guildMemberAdd", member => {
-    member.guild.channel.get('444588871108395018').send(member.user.username + `Bem vindo ao servidor, leia suas mensagens diretas`);
+bot.on("guildMemberAdd", (member) => {
     member.send('Bem-vindo ao servidor! Leia o chat <#443798242157658122> para saber das regras do servidor!');
 });
 
@@ -25,6 +24,18 @@ bot.on("messageCreate", (msg) => { // When a message is created
         bot.createMessage(msg.channel.id, "Ping!");
         // Respond with "Ping!"
     }
+});
+
+bot.on("guildMemberAdd", (member) => {
+  const guild = member.guild;
+  if (!newUsers[guild.id]) newUsers[guild.id] = new Discord.Collection();
+  newUsers[guild.id].set(member.id, member.user);
+
+  if (newUsers[guild.id].size > 10) {
+    const userlist = newUsers[guild.id].map(u => u.toString()).join(" ");
+    guild.channels.find("name", "general").send("Welcome our new users!\n" + userlist);
+    newUsers[guild.id].clear();
+  }
 });
 
 bot.connect(); // Get the bot to connect to Discord
