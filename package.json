@@ -1,41 +1,76 @@
 {
-  "requires": true,
-  "lockfileVersion": 1,
+  "_from": "eris",
+  "_id": "eris@0.9.0",
+  "_inBundle": false,
+  "_integrity": "sha512-U3/fv/wF2nA7Pc003v2cMXfTXvz8OySZYE21Zpx3ipm5sKbHWjcwDGdNXbp2Nb7fUip/IIjA/5540YDcqyQSvQ==",
+  "_location": "/eris",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "eris",
+    "name": "eris",
+    "escapedName": "eris",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/eris/-/eris-0.9.0.tgz",
+  "_shasum": "a2796839f7768cd40645c2c6b1bf0c86ba3147f3",
+  "_spec": "eris",
+  "_where": "C:\\Users\\Jorge.LUIS\\Desktop\\EnigBot Discord",
+  "author": {
+    "name": "abalabahaha"
+  },
+  "browser": {
+    "child_process": false,
+    "dgram": false,
+    "dns": false,
+    "fs": false,
+    "node-opus": false,
+    "tls": false,
+    "tweetnacl": false,
+    "ws": false
+  },
+  "bugs": {
+    "url": "https://github.com/abalabahaha/eris/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
-    "async-limiter": {
-      "version": "1.0.0",
-      "resolved": "https://registry.npmjs.org/async-limiter/-/async-limiter-1.0.0.tgz",
-      "integrity": "sha512-jp/uFnooOiO+L211eZOoSyzpOITMXx1rBITauYykG3BRYPu8h0UcxsPNB04RR5vo4Tyz3+ay17tR6JVf9qzYWg=="
-    },
-    "eris": {
-      "version": "0.9.0",
-      "resolved": "https://registry.npmjs.org/eris/-/eris-0.9.0.tgz",
-      "integrity": "sha512-U3/fv/wF2nA7Pc003v2cMXfTXvz8OySZYE21Zpx3ipm5sKbHWjcwDGdNXbp2Nb7fUip/IIjA/5540YDcqyQSvQ==",
-      "requires": {
-        "opusscript": "0.0.4",
-        "tweetnacl": "1.0.0",
-        "ws": "6.0.0"
-      }
-    },
-    "opusscript": {
-      "version": "0.0.4",
-      "resolved": "https://registry.npmjs.org/opusscript/-/opusscript-0.0.4.tgz",
-      "integrity": "sha512-bEPZFE2lhUJYQD5yfTFO4RhbRZ937x6hRwBC1YoGacT35bwDVwKFP1+amU8NYfZL/v4EU7ZTU3INTqzYAnuP7Q==",
-      "optional": true
-    },
-    "tweetnacl": {
-      "version": "1.0.0",
-      "resolved": "https://registry.npmjs.org/tweetnacl/-/tweetnacl-1.0.0.tgz",
-      "integrity": "sha1-cT2LgY2kIGh0C/aDhtBHnmb8ins=",
-      "optional": true
-    },
-    "ws": {
-      "version": "6.0.0",
-      "resolved": "https://registry.npmjs.org/ws/-/ws-6.0.0.tgz",
-      "integrity": "sha512-c2UlYcAZp1VS8AORtpq6y4RJIkJ9dQz18W32SpR/qXGfLDZ2jU4y4wKvvZwqbi7U6gxFQTeE+urMbXU/tsDy4w==",
-      "requires": {
-        "async-limiter": "1.0.0"
-      }
-    }
-  }
+    "opusscript": "^0.0.4",
+    "tweetnacl": "^1.0.0",
+    "ws": "^6.0.0"
+  },
+  "deprecated": false,
+  "description": "A NodeJS Discord library",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "homepage": "https://abal.moe/Eris/",
+  "keywords": [
+    "api",
+    "discord",
+    "discordapp",
+    "eris",
+    "wrapper"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "name": "eris",
+  "optionalDependencies": {
+    "opusscript": "^0.0.4",
+    "tweetnacl": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abalabahaha/eris.git"
+  },
+  "scripts": {
+    "eslint": "eslint --fix lib index.js && echo \"\u001b[1m\u001b[32mOK\u001b[39m\u001b[22m\" || echo \"\u001b[1m\u001b[31mNot OK\u001b[39m\u001b[22m\""
+  },
+  "version": "0.9.0"
 }
