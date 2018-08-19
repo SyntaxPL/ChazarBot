@@ -2,7 +2,6 @@
   "name": "eris",
   "version": "0.9.0",
   "description": "A NodeJS Discord library",
-  "main": "bot.js",
   "engines": {
     "node": ">=4.0.0"
   },
