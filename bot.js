@@ -26,16 +26,4 @@ bot.on("messageCreate", (msg) => { // When a message is created
     }
 });
 
-bot.on("guildMemberAdd", (member) => {
-  const guild = member.guild;
-  if (!newUsers[guild.id]) newUsers[guild.id] = new Discord.Collection();
-  newUsers[guild.id].set(member.id, member.user);
-
-  if (newUsers[guild.id].size > 10) {
-    const userlist = newUsers[guild.id].map(u => u.toString()).join(" ");
-    guild.channels.find("name", "general").send("Welcome our new users!\n" + userlist);
-    newUsers[guild.id].clear();
-  }
-});
-
 bot.connect(); // Get the bot to connect to Discord
