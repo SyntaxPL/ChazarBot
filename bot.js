@@ -15,7 +15,7 @@ bot.on("guildMemberAdd", (member) => {
 
 bot.on("messageCreate", (msg) => { // When a message is created
     if(message.author.bot) return;
-    if(!message.content.startsWith(prefix)) return;
+    if(message.content.startsWith(prefix)) return;
 
     if(msg.content.startsWith(prefix + "membros")) { // If the message content is "!ping"
         bot.createMessage(msg.channel.id, "Pong!");
