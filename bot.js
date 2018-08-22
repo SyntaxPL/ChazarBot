@@ -1,6 +1,6 @@
 const Eris = require("eris");
 
-var bot = new Eris("NDQ0NTQ5NDUxMTMwOTk0Njky.Dln-Mw.evjWhwxNBcGJAdJH199sD9aP6Bk");
+var bot = new Eris("MRANAHap8aSD3G3ZxSiO1KpJktf7thV-");
 // Replace BOT_TOKEN with your bot account's token
 
 bot.on("ready", () => { // When the bot is ready
