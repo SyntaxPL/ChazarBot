@@ -9,8 +9,8 @@ bot.on("ready", () => { // When the bot is ready
 
 const prefix = "e?"
 
-bot.on("guildMemberAdd", (member) => {
-    member.send('Bem-vindo ao servidor! Leia o chat <#443798242157658122> para saber das regras do servidor!');
+bot.on("guildMemberAdd", (guild, member) => {
+    member.getDMChannel.then(dm=> dm.createMessage(''Bem-vindo ao servidor! Leia o chat <#443798242157658122> para saber das regras do servidor!''))
 });
 
 bot.on("messageCreate", (msg) => { // When a message is created
